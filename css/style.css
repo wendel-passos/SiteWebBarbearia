@@ -1,0 +1,519 @@
+body{
+    font-family: 'Andika New Basic', sans-serif;
+}
+
+/* Cabeçalho */
+
+header{
+    background: rgb(105, 105, 121);
+    padding: 20px 0 10px 0;
+}
+
+.logo{
+    width: 20%;
+    transition: 1s; 
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.caixa{
+    position: relative;
+    width:940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 0 0 30px;
+}
+
+nav a {
+    
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+    /* Não decora o texto por causa do ancôra */
+    text-decoration: none;
+    font-family: 'Langar', cursive;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: white;
+    
+}
+/* Page produtos */
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding:  50px  0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin:  50px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 3px  solid whitesmoke;    
+}
+
+.produtos li:hover{
+    border: 3px solid black;
+}
+
+.produtos li:active{
+    border: 3px solid goldenrod; 
+}
+.produtos li:hover h2{
+    font-size: 25px;
+}
+.produtos li:hover .produtoPreco{
+    font-weight: 900;
+}
+
+.produtos h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 30px 0;
+}
+
+.produtoDescricao{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.produtoPreco{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.corpo-contato{
+    background-color: whitesmoke;
+}
+
+form{
+    margin: 40px 0;  
+
+}
+form label, form p{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color:darkslategrey;
+    margin: 0 0 10px;
+}
+.input-padrao, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 8px 4px;
+    width: 50%;
+    border: 0.5px groove darkslategrey;
+    border-radius: 2px;
+    
+}
+.preferencias{
+    margin: 30px 0;
+}
+.titulo-preferencia{
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    color: darkslategrey;
+}
+.checkbox{
+    margin: 90px 0 0 0;
+}
+.periodo{
+    margin: 40px 0;
+}
+
+.periodo legend{
+    font-size:25px;
+    color:darkslategrey;
+    margin:0 0 20px 0;
+}
+.select {
+    width: 40%;
+    margin-top: 10px;
+    padding: 5px 2px;
+    border: 1px solid darkslategrey;
+    background:grey;
+    font-size: 15px;
+    color: white;
+
+}
+.enviar {
+    width: 35%;
+    height: 40px;
+    border: none;
+    background: rgb(105, 105, 121);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 10px 0;
+    margin-top: 30px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: goldenrod;
+    transform: scale(1.2);
+}
+
+table{
+    width: 35%;
+    margin: 20px 0 100px 0;
+    padding: 20px 20px;
+}
+tr th{
+    background:black;
+    color: white;
+    font-size:30px;
+    border: 2px solid black;
+}
+
+td{
+    font-size: 25px;
+    color: white;
+    padding: 10px 2px;
+    background:rgb(105, 105, 121);
+    border: 2px solid black;
+
+}
+tfoot td{
+    font-size: 16px;
+    background:black;
+    padding: 2px 25px;
+}
+/* CSS Home-Page */
+
+.banner{
+    width: 100%;
+    height: 340px;
+    opacity: 0.8;
+    border:2px solid black;
+}
+
+.titulo-principal, .titulo-beneficio, .nossa-localizacao {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Langar', cursive;
+    padding: 1em 0 2em 0;
+    clear:left;
+}
+/* pseudo elemento para seleção de letra de palavras
+.titulo-principal::first-letter{ 
+    font-weight: bold;
+    color: violet;}
+*/
+/* pseudo elemento para acrescentar dados no conteúdo 
+.titulo-principal::before{
+    content: "["
+}
+.titulo-principal::after{
+    content: "]";
+}
+*/
+
+.utensilios{
+    width: 183px;
+    float: left;
+    border: 2px groove black;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+}
+.sessao-principal {
+    padding: 1em 0 6em 0;
+    background: whitesmoke;
+    
+}
+.conteudo-principal{
+    width: 940px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.sessao-principal p{
+    margin: 0 0 1em;
+}
+.sessao-principal strong{
+    font-weight: bold;
+}
+
+.sessao-principal em {
+    font-style: italic;
+}
+/* O gradiente tranforma o fundo da pagina de uma cor até outra gradualmente  */
+.maps{
+    padding: 2em 0 0 0;
+    background:linear-gradient(whitesmoke 5%, rgb(44, 44, 44));
+}
+.conteudo-mapa{
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.conteudo-beneficio{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficio{
+    background:rgb(44, 44, 44);
+    padding: 3em 0;
+    color: white;
+    /* box-shadow: inset 0px 0px 30px 15px black; */
+}
+
+.lista-beneficio{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+}
+.itens{
+    line-height: 1.5;
+    
+}
+
+/* pseudo elemento para acrescentar dados não selecionaveis ao usuario */
+.itens::before{
+    content:"\2705";
+}
+/* pseudo classe para seleção de um dos filhos de determinado conteúdp (itens) */
+.itens:first-child{
+   font-weight:bold;
+}
+
+.img-beneficio{
+    width: 50%;
+    border-radius: 20px;
+    margin: 0px 0 0 6%;
+    opacity: 0.8;
+    transition: 0.2s;
+    box-shadow: 0px 0px 30px 10px white;
+}
+
+.img-beneficio:hover{
+    opacity: 1;
+}
+
+.video{
+    width:560px;
+    opacity: 0.7;
+    box-shadow: 0 0 30px 10px white;
+    margin: 6em auto 3em auto;
+}
+
+.logo-social:before{
+    font-family:'Langar', cursive; ;
+    display: block;
+    margin: 0 0 5px 0;
+    content: "Acompanhe a gente nas redes sociais";
+}
+
+.logo-social {
+    text-align: center;
+}
+
+.logo-social img{ 
+    width: 30px;
+    transition:0.2s;  
+    padding: 0 0 2px 0;
+    opacity: 0.6;
+}
+
+.logo-social img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Rodape */
+.rodape{
+    width: 6%;
+}
+
+footer{
+    text-align: center;
+    background: rgb(105, 105, 121);
+    padding: 25px 0px;
+}
+.copyright{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+/* Media Querry para edição do conteúdo em dispositivos moveis */
+@media screen and (max-width: 480px){
+    
+    /* Cabeçalho */
+
+    .caixa, .conteudo-principal,.video,.conteudo-mapa,.conteudo-beneficio,.lista-beneficio{
+        width: auto;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 20px;
+        color: white;
+    }
+    
+    /* Media Querry Home page */
+
+    .banner{
+        width: 99%;
+        height:170px;
+    }
+
+    .utensilios{
+        width: 27%;
+    }
+
+    .conteudo-principal{
+        line-height: 1.5em;
+    }
+
+    .beneficio{
+        background:rgb(44, 44, 44);
+        padding: 3em 0em 0em 0;
+        color: white;
+    }
+
+    .lista-beneficio,.img-beneficio{
+        width: 92%;
+        margin: 15px 1em;
+    }
+    .nossa-localizacao{
+        font-size: 25px;
+    }
+    .video{
+        margin: 3em 1em 2em 1em;
+    }
+    .logo-social:before{
+        font-family:'Langar', cursive; ;
+        display: block;
+        margin: 0 0 1px 0;
+        content: "Acompanhe a gente nas redes sociais";
+    }
+    .logo-social img{ 
+        width: 15px; 
+        padding: 0 0 2px 0;
+        opacity: 1;
+    }
+
+    /* Querry Produtos page */
+    .produtos{
+        width: auto;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    .produtos li{
+        width: 30%;
+        margin: 10px 1%;
+        padding:10px 2px;
+        border: 1px solid black;
+    }
+    .produtos li img {
+        width: 100%;
+        padding:10px 2px;
+    }
+    .produtos h2{
+        font-size: 12px;
+    }
+    .produtoDescricao,.produtoPreco{
+        font-size: 10px;
+    }
+    /* Querry Contato */
+    .contato{
+        text-align: center;
+    }
+    .input-padrao, .feedback, .select, .titulo-preferencia{
+        width: 90%;
+        margin: 5px auto;
+    }
+    .titulo-preferencia{
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+    .checkbox{
+        font-size: 12px;
+        margin: 20px 0 2px 0;
+    }
+    .enviar:active{
+        background: gold;
+    }
+
+    table{
+        width: 90%;
+        margin: 0px auto 10px;
+    }
+   
+
+    /* Rodape */
+    
+    .rodape{
+        width:50px;
+    }
+    footer{
+        text-align: center;
+        background: rgb(105, 105, 121);
+        padding: 1em 0px;
+    }
+    .copyright{
+        color: whitesmoke;
+        font-size: 7px;
+        margin-top: -15px;
+    }
+
+}
+
+/* Seletor avançado: seleciona somente o primeiro filho da  seção 
+main > p{
+    background: violet;
+}
+
+Seletor avançado: seleciona somente o primeiro paragrafo depois de uma img
+img + p{
+    background: brown;
+}
+Seletor avançado: seleciona todos os paragrafos dentro da seção  imagem 
+img ~ p {
+    background: yellow;
+}
+Seletor avançado: faz uma exclusão no conteudo onde não deve ser aplicado às alterções
+.sessao-principal p:not(#missao){
+    background: blue;
+}*/
+
+
+
+
